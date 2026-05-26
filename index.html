@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Progetto Luce · Andrea Amoruso · 2026</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet" />
+
+  <!-- KaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="stage">
+  <!-- STELLE / PARTICELLE SFONDO -->
+  <div id="stars"><canvas id="stars-canvas"></canvas></div>
+  <div class="barra"></div>
+  <!-- ═══════════════════════════════════════════════
+       SLIDE 0 — TITLE PAGE
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-title-page">
+    <div class="main-title">Progetto Luce</div>
+    <div class="subtitle">Dalla natura della luce alla fisica moderna</div>
+    <div class="divider"><span class="divider-star">✦</span></div>
+    <div class="author">Andrea Amoruso · May 2026</div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       SEZIONE 1 — COVER
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-cover">
+    <div class="section-number">01</div>
+    <div class="cover-title">La Luce</div>
+    <div class="cover-sub">Energia, velocità e comportamento</div>
+    <div class="divider"><span class="divider-star">✦</span></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       1.1 — Introduzione
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-content has-media">
+    <div class="slide-label">1.1</div>
+    <div class="slide-title">Introduzione alla Luce</div>
+    <div class="slide-body">
+      <p>La luce è una forma di energia che ci permette di vedere il mondo che ci circonda. Ogni giorno la utilizziamo senza accorgercene: grazie alla luce possiamo distinguere colori, forme, movimenti e distanze.</p>
+      <p>La principale fonte naturale di luce è il Sole. Gli oggetti possono:</p>
+      <ul class="prop-list">
+        <li><span><strong>Emettere</strong> luce — come il Sole o una lampada</span></li>
+        <li><span><strong>Riflettere</strong> la luce — come la Luna o un tavolo illuminato</span></li>
+      </ul>
+      <p>La luce viaggia nel vuoto a circa <strong>300.000 km/s</strong>, dal Sole alla Terra in circa 8 minuti.</p>
+    </div>
+    <div class="media-col">
+      <div class="placeholder">
+        <img src="https://i.ibb.co/KjwR12By/image.png" alt="image" border="0">
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       1.2 — Come si comporta
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-content has-media">
+    <div class="slide-label">1.2</div>
+    <div class="slide-title">Come si Comporta la Luce</div>
+    <div class="slide-body">
+      <p>La luce si propaga in linea retta e può attraversare diversi materiali. A seconda del materiale che incontra, può avere comportamenti differenti:</p>
+      <ul class="prop-list">
+        <li><span><strong>Trasmissione</strong> — attraversa il materiale, come nel vetro trasparente</span></li>
+        <li><span><strong>Riflessione</strong> — rimbalza su una superficie, come in uno specchio</span></li>
+        <li><span><strong>Assorbimento</strong> — viene trattenuta, trasformandosi in parte in calore</span></li>
+      </ul>
+      <p>I materiali si classificano in: <em>trasparenti</em>, <em>traslucidi</em> e <em>opachi</em>.</p>
+      <p>Questi fenomeni spieganomolti eventi quotidiani come ombre, specchi e visibilità degli oggetti.</p>
+    </div>
+    <div class="media-col">
+      <div class="placeholder">
+        <img src="https://i.ibb.co/Jjh72q7J/image.png" alt="image" border="0">
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       1.3 — Applicazioni nella vita quotidiana
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-content">
+    <div class="slide-label">1.3</div>
+    <div class="slide-title">Le Applicazioni nella Vita Quotidiana</div>
+    <div class="slide-body">
+      <p>La luce è fondamentale per la vita sulla Terra: permette alle piante di svolgere la fotosintesi e rende possibile la visione. Inoltre viene utilizzata in moltissimi campi:</p>
+      <ul class="prop-list">
+        <li><span>Nelle <strong>telecomunicazioni</strong>, attraverso le fibre ottiche</span></li>
+        <li><span>In <strong>medicina</strong>, con laser e strumenti diagnostici</span></li>
+        <li><span>Nella <strong>fotografia</strong> e nel cinema</span></li>
+        <li><span>Nell'<strong>illuminazione</strong> di case, strade e città</span></li>
+      </ul>
+      <p>Lo studio della luce ha portato a importanti scoperte scientifiche e tecnologiche. Lo studio di argomenti avanzati come lo spettro elettromagnetico, la natura ondulatoria e il fenomeno della rifrazione aiutano a comprenderne meglio il suo comportamento.</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       1.4 — Velocità della luce
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-content has-media">
+    <div class="slide-label">1.4</div>
+    <div class="slide-title">Com'è stata Misurata la Velocità della Luce</div>
+    <div class="slide-body">
+      <p>Uno dei primi tentativi fu realizzato nel <strong>1849</strong> da Armand Fizeau con questo schema:</p>
+      <ul class="prop-list">
+        <li><span>Una sorgente luminosa inviava luce verso uno specchio distante</span></li>
+        <li><span>La luce attraversava una <strong>ruota dentata</strong> in rapida rotazione</span></li>
+        <li><span>Dopo la riflessione, la luce tornava attraverso la ruota</span></li>
+      </ul>
+      <p>Variando la velocità di rotazione, Fizeau calcolò il tempo che la luce impiegava per percorrere il tragitto andata e ritorno: circa <strong>300.000 km/s</strong>. Questo dimostra che, anche se estremamente veloce, la luce non si propaga istantaneamente.</p>
+    </div>
+    <div class="media-col">
+      <div class="placeholder placeholder-video">
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/B8oSIZRPxkM" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       SEZIONE 2 — COVER
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-cover">
+    <div class="section-number">02</div>
+    <div class="cover-title">Lo Spettro elettromagnetico</div>
+    <div class="divider"><span class="divider-star">✦</span></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       2.1 — Definizione
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-content has-media">
+    <div class="slide-label">2.1</div>
+    <div class="slide-title">Definizione dello Spettro Elettromagnetico</div>
+    <div class="slide-body">
+      <p>Lo spettro elettromagnetico comprende tutte le radiazioni EM ordinate per frequenza ($f$), lunghezza d'onda ($\lambda$) ed energia ($E$).</p>
+      <p>Le onde EM sono oscillazioni di campo elettrico e campo magnetico che trasportano energia nello spazio. Le relazioni fondamentali sono:</p>
+      <div class="formula-box">$$c = \lambda f$$</div>
+      <div class="formula-box">$$E = hf$$</div>
+    </div>
+    <div class="media-col">
+      <!-- GRAFICA: spettro EM -->
+      <div class="grafica-wrap">
+        <svg viewBox="0 0 380 180" xmlns="http://www.w3.org/2000/svg" class="grafica-svg">
+          <defs>
+            <linearGradient id="spectrumGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%"   stop-color="#e85050"/>
+              <stop offset="14%"  stop-color="#f0a040"/>
+              <stop offset="28%"  stop-color="#f0e040"/>
+              <stop offset="42%"  stop-color="#50cc50"/>
+              <stop offset="56%"  stop-color="#40c0f0"/>
+              <stop offset="70%"  stop-color="#6060f0"/>
+              <stop offset="85%"  stop-color="#9040e0"/>
+              <stop offset="100%" stop-color="#c040d0"/>
+            </linearGradient>
+          </defs>
+          <!-- Barra spettro -->
+          <rect x="10" y="60" width="360" height="30" rx="4" fill="url(#spectrumGrad)" opacity="0.9"/>
+          <!-- Freccia lunghezza d'onda -->
+          <line x1="10" y1="105" x2="370" y2="105" stroke="#e8e8f0" stroke-width="1" opacity="0.4"/>
+          <polygon points="10,102 10,108 2,105" fill="#e8e8f0" opacity="0.4"/>
+          <text x="15" y="120" font-family="JetBrains Mono,monospace" font-size="8" fill="#e8e8f0" opacity="0.6">λ grande → bassa E</text>
+          <!-- Frecce energia -->
+          <polygon points="370,102 370,108 378,105" fill="#c8a96e" opacity="0.7"/>
+          <text x="260" y="120" font-family="JetBrains Mono,monospace" font-size="8" fill="#c8a96e" opacity="0.8">alta f → alta E</text>
+          <!-- Labels -->
+          <text x="12"  y="52" font-family="JetBrains Mono,monospace" font-size="7" fill="#e85050" opacity="0.85">Radio</text>
+          <text x="54"  y="52" font-family="JetBrains Mono,monospace" font-size="7" fill="#f0a040" opacity="0.85">Micro</text>
+          <text x="100" y="52" font-family="JetBrains Mono,monospace" font-size="7" fill="#eecc50" opacity="0.85">IR</text>
+          <text x="138" y="52" font-family="JetBrains Mono,monospace" font-size="7" fill="#80e080" opacity="0.85">Visibile</text>
+          <text x="194" y="52" font-family="JetBrains Mono,monospace" font-size="7" fill="#40c0f0" opacity="0.85">UV</text>
+          <text x="232" y="52" font-family="JetBrains Mono,monospace" font-size="7" fill="#8080f0" opacity="0.85">Raggi X</text>
+          <text x="300" y="52" font-family="JetBrains Mono,monospace" font-size="7" fill="#c040d0" opacity="0.85">Gamma</text>
+          <!-- Tick lines -->
+          <line x1="52"  y1="58" x2="52"  y2="92" stroke="#e8e8f0" stroke-width="0.5" opacity="0.2"/>
+          <line x1="104" y1="58" x2="104" y2="92" stroke="#e8e8f0" stroke-width="0.5" opacity="0.2"/>
+          <line x1="136" y1="58" x2="136" y2="92" stroke="#e8e8f0" stroke-width="0.5" opacity="0.2"/>
+          <line x1="196" y1="58" x2="196" y2="92" stroke="#e8e8f0" stroke-width="0.5" opacity="0.2"/>
+          <line x1="228" y1="58" x2="228" y2="92" stroke="#e8e8f0" stroke-width="0.5" opacity="0.2"/>
+          <line x1="298" y1="58" x2="298" y2="92" stroke="#e8e8f0" stroke-width="0.5" opacity="0.2"/>
+          <!-- Title -->
+          <text x="190" y="170" font-family="JetBrains Mono,monospace" font-size="9" fill="#c8a96e" opacity="0.6" text-anchor="middle">SPETTRO ELETTROMAGNETICO</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       2.2 — Costante di Planck
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-content">
+    <div class="slide-label">2.2</div>
+    <div class="slide-title">La Costante di Planck</div>
+    <div class="slide-body">
+      <p>La costante di Planck collega energia e frequenza tramite la formula $E = hf$. Questo porta a un concetto fondamentale per la fisica moderna: l'energia non varia con continuità, ma tramite <strong>"pacchetti di energia"</strong> detti <em>fotoni</em>.</p>
+      <p>La discretizzazione dell'energia è una vera e propria rivoluzione concettuale, e la costante di Planck regola tutto ciò:</p>
+      <div class="formula-box">$$h = 6.626 \times 10^{-34} \, \text{J} \cdot \text{s}$$</div>
+      <p>L'energia non scorre come un fluido continuo, ma arriva a "scatti" quantizzati: questo è il cuore della fisica quantistica.</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       2.3 — Effetto Doppler
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-content has-media">
+    <div class="slide-label">2.3</div>
+    <div class="slide-title">L'Effetto Doppler</div>
+    <div class="slide-body">
+      <p>L'effetto Doppler applicato alla luce è uno degli strumenti più importanti dell'astronomia moderna, perché permette di ottenere informazioni sul movimento degli astri analizzando la loro radiazione elettromagnetica.</p>
+      <ul class="prop-list">
+        <li><span><strong>Redshift</strong> — la stella si allontana: le onde si "allungano", lo spettro si sposta verso il rosso</span></li>
+        <li><span><strong>Blueshift</strong> — la stella si avvicina: le onde si comprimono, lo spettro si sposta verso il blu</span></li>
+      </ul>
+    </div>
+    <div class="media-col">
+      <!-- GRAFICA Doppler redshift/blueshift -->
+      <div class="grafica-wrap">
+        <svg viewBox="0 0 340 200" xmlns="http://www.w3.org/2000/svg" class="grafica-svg">
+          <defs>
+            <linearGradient id="redG" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#f06060" stop-opacity="0.9"/>
+              <stop offset="100%" stop-color="#f06060" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="blueG" x1="1" y1="0" x2="0" y2="0">
+              <stop offset="0%" stop-color="#6090ff" stop-opacity="0.9"/>
+              <stop offset="100%" stop-color="#6090ff" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <!-- Star center -->
+          <circle cx="170" cy="100" r="18" fill="#fff9e0" opacity="0.95"/>
+          <circle cx="170" cy="100" r="22" fill="#fff0a0" opacity="0.25"/>
+          <text x="170" y="104" font-family="JetBrains Mono,monospace" font-size="9" fill="#333" text-anchor="middle" font-weight="bold">★</text>
+
+          <!-- Redshift waves (right = moving away) -->
+          <ellipse cx="230" cy="100" rx="18" ry="8" stroke="#f06060" stroke-width="1.2" fill="none" opacity="0.8"/>
+          <ellipse cx="248" cy="100" rx="26" ry="11" stroke="#f06060" stroke-width="0.9" fill="none" opacity="0.55"/>
+          <ellipse cx="270" cy="100" rx="36" ry="14" stroke="#f06060" stroke-width="0.6" fill="none" opacity="0.35"/>
+          <text x="300" y="88" font-family="JetBrains Mono,monospace" font-size="8" fill="#f06060" text-anchor="middle">REDSHIFT</text>
+          <text x="300" y="100" font-family="JetBrains Mono,monospace" font-size="7" fill="#f06060" opacity="0.65" text-anchor="middle">si allontana →</text>
+
+          <!-- Blueshift waves (left = approaching) -->
+          <ellipse cx="110" cy="100" rx="18" ry="8" stroke="#6090ff" stroke-width="1.2" fill="none" opacity="0.8"/>
+          <ellipse cx="96"  cy="100" rx="24" ry="10" stroke="#6090ff" stroke-width="0.9" fill="none" opacity="0.55"/>
+          <ellipse cx="76"  cy="100" rx="32" ry="13" stroke="#6090ff" stroke-width="0.6" fill="none" opacity="0.35"/>
+          <text x="44" y="88" font-family="JetBrains Mono,monospace" font-size="8" fill="#6090ff" text-anchor="middle">BLUESHIFT</text>
+          <text x="44" y="100" font-family="JetBrains Mono,monospace" font-size="7" fill="#6090ff" opacity="0.65" text-anchor="middle">← si avvicina</text>
+
+          <!-- Label stella -->
+          <text x="170" y="135" font-family="JetBrains Mono,monospace" font-size="8" fill="#c8a96e" text-anchor="middle" opacity="0.8">SORGENTE LUMINOSA</text>
+
+          <!-- Ground observer -->
+          <rect x="148" y="155" width="44" height="16" rx="3" fill="none" stroke="#c8a96e" stroke-width="0.8" opacity="0.5"/>
+          <text x="170" y="167" font-family="JetBrains Mono,monospace" font-size="8" fill="#c8a96e" text-anchor="middle" opacity="0.7">OSSERVATORE</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       2.4 — Onde radio, microonde e infrarosso
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-content has-media">
+    <div class="slide-label">2.4</div>
+    <div class="slide-title">Onde Radio, Microonde e Infrarosso</div>
+    <div class="slide-body">
+      <p>Anche se non visibili a occhio nudo, sono fondamentali nella tecnologia moderna:</p>
+      <ul class="prop-list">
+        <li><span><strong>Onde radio</strong> — trasmissioni radiofoniche, televisive e comunicazioni satellitari</span></li>
+        <li><span><strong>Microonde</strong> — radar, Wi-Fi, telefonia mobile e forni a microonde</span></li>
+        <li><span><strong>Infrarosso</strong> — termocamere, sensori di temperatura, telecomandi e osservazioni astronomiche</span></li>
+      </ul>
+    </div>
+    <div class="media-col">
+      <div class="placeholder">
+        <img src="https://i.ibb.co/fVkq71LX/image.png" alt="image" border="0">
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       2.5 — Luce visibile
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-content has-media">
+    <div class="slide-label">2.5</div>
+    <div class="slide-title">La Luce Visibile</div>
+    <div class="slide-body">
+      <p>La luce visibile rappresenta una piccola porzione dello spettro elettromagnetico, compresa circa tra <strong>400 e 700 nanometri</strong>, ed è l'unica percepibile direttamente dall'occhio umano.</p>
+      <p>Nonostante occupi una regione molto limitata dello spettro, è fondamentale per la vita: rende possibile la visione e fornisce l'energia necessaria alla fotosintesi clorofilliana.</p>
+      <p>In astronomia, lo studio della luce proveniente dalle stelle consente di ottenere informazioni sulla composizione chimica, sulla temperatura e sul movimento degli astri.</p>
+    </div>
+    <div class="media-col">
+      <div class="placeholder">
+        <img src="https://i.ibb.co/G4sW22Sd/image.png" alt="image" border="0">
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       2.6 — UV, Raggi X, Raggi Gamma
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-content has-media">
+    <div class="slide-label">2.6</div>
+    <div class="slide-title">Ultravioletto, Raggi X e Raggi Gamma</div>
+    <div class="slide-body">
+      <p>La parte più energetica dello spettro, caratterizzata da fotoni molto energetici:</p>
+      <ul class="prop-list">
+        <li><span><strong>Ultravioletto</strong> — sterilizzazione e disinfezione</span></li>
+        <li><span><strong>Raggi X</strong> — diagnostica medica e controlli di sicurezza grazie alla loro capacità di attraversare i materiali</span></li>
+        <li><span><strong>Raggi Gamma</strong> — radioterapia e studio di fenomeni cosmici estremi come supernove e buchi neri</span></li>
+      </ul>
+      <p>Nonostante le loro applicazioni, un'esposizione eccessiva a queste radiazioni può essere dannosa.</p>
+    </div>
+    <div class="media-col">
+      <div class="placeholder strict">
+        <img src="https://i.ibb.co/cVTbFFr/image.png" alt="image" border="0">
+      </div>
+      <div class="placeholder strict">
+        <img src="https://i.ibb.co/jkTnW60j/image.png" alt="image" border="0">
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       SEZIONE 3 — COVER
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-cover">
+    <div class="section-number">03</div>
+    <div class="cover-title">Natura</div>
+    <div class="cover-sub">Corpuscolare della Luce</div>
+    <div class="divider"><span class="divider-star">✦</span></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       3.1 — La luce è fatta di particelle
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-content has-media">
+    <div class="slide-label">3.1</div>
+    <div class="slide-title">La Luce è Fatta di Particelle</div>
+    <div class="slide-body">
+      <p>A lungo la scienza si è interrogata sulla reale natura della luce. Dire che la luce ha una <strong>natura corpuscolare</strong> significa affermare che l'energia luminosa non viene trasportata in modo continuo, ma attraverso piccole quantità di energia chiamate <em>fotoni</em>.</p>
+      <p>I fotoni sono <strong>particelle elementari prive di massa</strong> che si muovono alla velocità della luce.</p>
+    </div>
+    <div class="media-col">
+      <div class="placeholder">
+        <img src="https://i.ibb.co/Dgft1W3D/natura-corpuscolare.png" alt="natura corpuscolare" border="0">
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       3.2 — Una prova della natura corpuscolare
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-content has-media">
+    <div class="slide-label">3.2</div>
+    <div class="slide-title">Una Prova: L'Effetto Fotoelettrico</div>
+    <div class="slide-body">
+      <p>L'effetto fotoelettrico, dimostrato nel <strong>1905</strong> da Albert Einstein, consiste nell'emissione di elettroni da parte di un metallo quando viene colpito dalla luce.</p>
+      <p>Nell'esperimento si utilizza una superficie metallica illuminata con luce di diversa <strong>frequenza</strong> (numero di oscillazioni al secondo) e <strong>intensità</strong> (energia trasportata nell'unità di tempo).</p>
+      <p>Quando la luce colpisce il metallo, gli elettroni assorbono energia e alcuni possono essere espulsi: vengono chiamati <em>fotoelettroni</em>.</p>
+    </div>
+    <div class="media-col">
+      <div class="placeholder">
+        <img src="https://i.ibb.co/gFW17PTC/effetto-fotoelettrico.png" alt="effetto fotoelettrico" border="0">
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       3.3 — La dimostrazione
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-content">
+    <div class="slide-label">3.3</div>
+    <div class="slide-title">La Dimostrazione di Einstein</div>
+    <div class="slide-body">
+      <p>La teoria classica prevedeva che aumentando l'intensità luminosa aumentasse anche l'energia trasferita agli elettroni. Gli esperimenti mostrarono però che, se la frequenza era troppo bassa, gli elettroni <strong>non venivano emessi</strong> nemmeno con intensità elevate.</p>
+      <p>Einstein propose che la luce fosse formata da fotoni, ciascuno con energia:</p>
+      <div class="formula-box">$$E = h\nu$$</div>
+      <p>La formula mostra che l'energia della luce dipende dalla <strong>frequenza</strong> e non dall'intensità. Quando un fotone colpisce un elettrone del metallo, può trasferirgli la sua energia; se questa supera il <em>lavoro di estrazione</em>, l'elettrone viene liberato.</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       3.4 — La simulazione
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-content">
+    <div class="slide-label">3.4</div>
+    <div class="slide-title">La Simulazione</div>
+    <div class="slide-body">
+      <p>Attraverso il simulatore è possibile cambiare il tipo di metallo, la frequenza e l'intensità della luce, osservando direttamente cosa succede agli elettroni. Gli aspetti fondamentali dimostrabili:</p>
+      <ul class="prop-list">
+        <li><span>Esiste una <strong>frequenza di soglia</strong>: sotto questo valore non vengono emessi elettroni</span></li>
+        <li><span>Aumentando l'<strong>intensità</strong> aumenta il numero di elettroni emessi, ma non la loro energia</span></li>
+        <li><span>Aumentando la <strong>frequenza</strong> aumenta l'energia cinetica degli elettroni espulsi</span></li>
+        <li><span>Il rilascio degli elettroni varia in base al <strong>materiale</strong></span></li>
+      </ul>
+      <a href="https://phet.colorado.edu/sims/cheerpj/photoelectric/latest/photoelectric.html?simulation=photoelectric" target="_blank">
+      <div class="link-box">
+        🔗 LINK ESPERIMENTO
+      </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       3.5 — Applicazioni dell'effetto fotoelettrico
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-content has-media">
+    <div class="slide-label">3.5</div>
+    <div class="slide-title">Applicazioni dell'Effetto Fotoelettrico</div>
+    <div class="slide-body">
+      <p>Le applicazioni dell'effetto fotoelettrico sono numerose nella vita quotidiana. Questo fenomeno è alla base di:</p>
+      <ul class="prop-list">
+        <li><span><strong>Celle fotovoltaiche</strong> — conversione di luce in elettricità</span></li>
+        <li><span><strong>Sensori di luce</strong> — rilevamento e misurazione della luce</span></li>
+        <li><span><strong>Fotocamere digitali</strong> — cattura di immagini</span></li>
+        <li><span><strong>Strumenti elettronici</strong> — numerosissime applicazioni moderne</span></li>
+      </ul>
+      <p>Lo studio della natura corpuscolare della luce ha rivoluzionato non solo la fisica teorica, ma anche la tecnologia moderna.</p>
+    </div>
+    <div class="media-col">
+      <div class="placeholder strict">
+        <img src="https://i.ibb.co/gZ9SWpY7/applicazione-particelle1.jpg" alt="applicazione particelle1" border="0">
+      </div>
+      <div class="placeholder strict">
+        <img src="https://i.ibb.co/GvSR2p5L/applicazione-particelle2.jpg" alt="applicazione particelle2" border="0">
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       SEZIONE 4 — COVER
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-cover">
+    <div class="section-number">04</div>
+    <div class="cover-title">Doppia Natura della Luce</div>
+    <div class="divider"><span class="divider-star">✦</span></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       4.1 — La natura ondulatoria
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-content">
+    <div class="slide-label">4.1</div>
+    <div class="slide-title">La Natura Ondulatoria</div>
+    <div class="slide-body">
+      <p>Il modello ondulatorio permette di spiegare fenomeni come la <strong>diffrazione</strong> e l'<strong>interferenza</strong>, tipici di tutte le onde.</p>
+      <p>Secondo questa teoria, la luce non è costituita da particelle che si muovono in linea retta, ma da una <em>onda elettromagnetica</em>: una perturbazione che si propaga nello spazio trasportando energia.</p>
+      <p>A differenza delle onde meccaniche come il suono o le onde dell'acqua, la luce può propagarsi anche nel <strong>vuoto</strong>, senza bisogno di un mezzo materiale.</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       4.2 — Le grandezze in gioco
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-content has-media">
+    <div class="slide-label">4.2</div>
+    <div class="slide-title">Le Grandezze in Gioco</div>
+    <div class="slide-body">
+      <ul class="prop-list">
+        <li><span><strong>Frequenza</strong> $\nu$ — numero di oscillazioni complete al secondo, in hertz</span></li>
+        <li><span><strong>Lunghezza d'onda</strong> $\lambda$ — distanza dopo la quale l'onda si riproduce uguale a sé stessa, in metri</span></li>
+        <li><span><strong>Velocità di propagazione</strong> $v = c$ nel vuoto, uguale per tutte le radiazioni EM</span></li>
+      </ul>
+      <p>Queste grandezze sono legate dalla formula fondamentale:</p>
+      <div class="formula-box">$$c = \lambda\nu$$</div>
+      <p>Tutte le radiazioni elettromagnetiche viaggiano alla stessa velocità nel vuoto, ma si differenziano per frequenza e lunghezza d'onda.</p>
+    </div>
+    <div class="media-col">
+      <div class="placeholder">
+        <img src="https://i.ibb.co/TD6RncF5/onde-grandezze.png" alt="onde grandezze" border="0">
+      </div>
+    </div>
+  </div>
+<!-- ═══════════════════════════════════════════════
+       4.3 — La diffrazione
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-content has-media">
+    <div class="slide-label">4.3</div>
+    <div class="slide-title">La diffrazione</div>
+    <div class="slide-body">
+      <p>
+        La diffrazione è uno dei fenomeni che dimostrano in modo più evidente la natura ondulatoria della luce.
+        La diffrazione si verifica quando un fascio di luce incontra una fenditura molto stretta, un piccolo foro o un ostacolo di dimensioni confrontabili con la sua lunghezza d’onda
+        Se la luce fosse composta solo da particelle che si muovono in linea retta, dovrebbe semplicemente proseguire dritta.
+        Invece accade qualcosa di diverso:
+        dopo aver attraversato la fenditura, il fascio di luce si allarga a ventaglio, invadendo anche zone che teoricamente dovrebbero restare in ombra.
+        Questo comportamento è tipico delle onde.
+        È come quando le onde dell’acqua passano attraverso una piccola apertura e poi si allargano in tutte le direzioni.
+       </p>
+       <a style="width: 100%;" href="https://phet.colorado.edu/sims/html/wave-interference/latest/wave-interference_all.html" target="_blank">
+      <div class="link-box" style="width: 100%;">
+        🔗 LINK ESPERIMENTO
+      </div>
+    </a>
+    </div>
+    <div class="media-col">
+      <div class="placeholder">
+        <img src="https://i.ibb.co/6749vq3G/onde-diffrazione.png" alt="onde diffrazione" border="0">
+      </div>
+    </div>
+    
+  </div>
+ 
+  <!-- ═══════════════════════════════════════════════
+       4.4 — L'interferenza
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-content has-media">
+    <div class="slide-label">4.4</div>
+    <div class="slide-title">L'Interferenza</div>
+    <div class="slide-body">
+      <p>L'interferenza è il fenomeno che si verifica quando due onde luminose si incontrano e si sovrappongono nello stesso punto dello spazio.</p>
+      <p>Le onde si combinano tra loro, dando origine a un'alternanza di <strong>zone luminose</strong> (frange chiare) e <strong>zone scure</strong> (frange scure).</p>
+      <ul class="prop-list">
+        <li><span><strong>Interferenza costruttiva</strong> — le creste si sommano, zona luminosa</span></li>
+        <li><span><strong>Interferenza distruttiva</strong> — cresta e avvallamento si annullano, zona scura</span></li>
+      </ul>
+    </div>
+    <div class="media-col">
+      <div class="placeholder strict">
+        <img style="height: 100%;" src="https://i.ibb.co/KcvwWn5L/onde-interferenza.png" alt="onde interferenza" border="0">
+      </div>
+      <div class="placeholder strict">
+        <img src="https://i.ibb.co/q3bXRmn9/Whats-App-Image-2026-05-26-at-18-46-46.jpg" alt="Whats App Image 2026 05 26 at 18 46 46" border="0">
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       4.5 — Esperimento di Young
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-content has-media">
+    <div class="slide-label">4.5</div>
+    <div class="slide-title">L'Esperimento di Young</div>
+    <div class="slide-body">
+      <p>La dimostrazione più famosa della natura ondulatoria fu realizzata nel <strong>1801</strong> da Thomas Young con la <em>doppia fenditura</em>.</p>
+      <p>Young fece passare un fascio di luce attraverso una barriera con due piccole fenditure. Se la luce fosse composta solo da particelle, si sarebbero viste semplicemente due linee luminose.</p>
+      <p>Sul secondo schermo comparvero invece una <strong>frangia centrale molto luminosa</strong> e molte altre frange chiare e scure alternate — impossibile con il modello corpuscolare, dimostrando la doppia natura della luce.</p>
+    </div>
+    <div class="media-col">
+      <div class="placeholder">
+        <img src="https://i.ibb.co/VcSsNWgB/onde-doppia-fenditura.png" alt="onde doppia fenditura" border="0">
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       4.6 — Immagine esplicativa
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-content">
+    <div class="slide-label">4.6</div>
+    <div class="slide-title">Schema della Doppia Fenditura</div>
+    <div class="slide-body" style="width: 100%;">
+      <div class="placeholder"><img src="https://i.ibb.co/JRZvRFmV/onde-immagine-grande.png" alt="onde immagine grande" border="0"></div>
+    </div>
+  </div>
+<!-- ═══════════════════════════════════════════════
+       SEZIONE 5 — COVER
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-cover">
+    <div class="section-number">05</div>
+    <div class="cover-title">La Legge di Snell</div>
+    <!-- <div class="cover-sub">di Snell</div> -->
+    <div class="divider"><span class="divider-star">✦</span></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       5.1 — Dalla natura ondulatoria alla Legge di Snell
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-content">
+    <div class="slide-label">5.1</div>
+    <div class="slide-title">Dalla natura ondulatoria alla Legge di Snell</div>
+    <div class="slide-body">
+      <p>Abbiamo mostrato come la luce sia intrinsecamente un'onda elettromagnetica, ora analizziamo cosa succede quando questa onda non incontra una fenditura, ma cambia completamente il mezzo che attraversa. Vedremo come la natura ondulatoria della luce ci costringa ad approdare a una delle leggi più importanti dell'ottica: la Legge di Snell.</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       5.2 — Come vediamo gli oggetti
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-content has-media">
+    <div class="slide-label">5.2</div>
+    <div class="slide-title">Come vediamo gli oggetti</div>
+    <div class="slide-body">
+      <p>Noi siamo "ricevitori" di luce, non emettitori.</p>
+      <ul class="prop-list">
+        <li><span>Sorgenti primarie (emettono luce: il Sole, una lampadina).</span></li>
+        <li><span>Sorgenti secondarie (riflettono la luce: gli oggetti quotidiani).</span></li>
+        <li><span>La percezione visiva si basa su raggi che viaggiano in linea retta.</span></li>
+      </ul>
+    </div>
+    <div class="media-col">
+      <div class="placeholder">
+        <img src="https://i.ibb.co/zWvQTLLM/come-vediamo-gli-oggetti-jpg.jpg" alt="come vediamo gli oggetti jpg" border="0">
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       5.3 — Il "Cambio di Passo"
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-content has-media">
+    <div class="slide-label">5.3</div>
+    <div class="slide-title">Il "Cambio di Passo" (Il legame ondulatorio)</div>
+    <div class="slide-body">
+      <p>Relazione fondamentale:</p>
+      <div class="formula-box">$$v = \lambda\nu$$</div>
+      <p>Passaggio a un mezzo più denso (dall'aria all'acqua):</p>
+      <ul class="prop-list">
+        <li><span>La frequenza ($\nu$) rimane costante (il colore non cambia).</span></li>
+        <li><span>La velocità ($v$) diminuisce ($v &lt; c$).</span></li>
+        <li><span>La lunghezza d'onda ($\lambda$) deve diminuire (accorciarsi).</span></li>
+      </ul>
+      <p>Secondo il principio di Huygens, se il fronte d'onda arriva inclinato rispetto alla superficie dell'acqua, la parte che vi entra per prima rallenta e accorcia il passo in anticipo rispetto alla parte che si trova ancora nell'aria.</p>
+    </div>
+    <div class="media-col">
+      <div class="placeholder">
+        <img src="https://i.ibb.co/20xHH43h/leggedisnell2.png" alt="leggedisnell2" border="0">
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       5.4 — La Dimostrazione Analitica
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-content has-media">
+    <div class="slide-label">5.4</div>
+    <div class="slide-title">La Dimostrazione Analitica</div>
+    <div class="slide-body">
+      <p>Superficie di separazione: ipotenusa comune AB'</p>
+      <ul class="prop-list">
+        <li><span>Mezzo 1 (Aria): Triangolo rettangolo AA′B → $\sin(\theta_1) = \dfrac{v_1 \Delta t}{AB'}$</span></li>
+        <li><span>Mezzo 2 (Acqua): Triangolo rettangolo AA′B → $\sin(\theta_2) = \dfrac{v_2 \Delta t}{AB}$</span></li>
+        <li><span>Rapporto dei seni: $\dfrac{\sin(\theta_1)}{\sin(\theta_2)} = \dfrac{v_1}{v_2}$</span></li>
+      </ul>
+    </div>
+    <div class="media-col">
+      <div class="placeholder">
+        <img src="https://i.ibb.co/393jkwbL/legge-snell-completa-jpg.jpg" alt="legge snell completa jpg" border="0">
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       5.5 — La Legge di Snell e l'Angolo Limite
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-content">
+    <div class="slide-label">5.5</div>
+    <div class="slide-title">La Legge di Snell e l'Angolo Limite</div>
+    <div class="slide-body">
+      <p>Indice di rifrazione:</p>
+      <div class="formula-box">$$n = \frac{c}{v}$$</div>
+      <ul class="prop-list">
+        <li><span>Legge di Snell: $n_1 \sin(\theta_1) = n_2 \sin(\theta_2)$</span></li>
+        <li><span>Condizione limite ($n_1 > n_2$): $\sin(\theta_{limite}) = \dfrac{n_2}{n_1}$ → Riflessione Totale.</span></li>
+      </ul>
+      <p>Introducendo l'indice di rifrazione $n = \frac{c}{v}$, definito come il rapporto tra la velocità della luce nel vuoto ($c$) e la velocità della luce nel mezzo ($v$), la relazione diventa la celebre Legge di Snell, conosciuta anche come legge della rifrazione, che descrive il comportamento della luce quando passa da un mezzo a un altro con indici di rifrazione differenti.</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       5.6 — Risvolti Pratici e Chiusura
+  ═══════════════════════════════════════════════ -->
+  <div class="slide slide-content has-media">
+    <div class="slide-label">5.6</div>
+    <div class="slide-title">Risvolti Pratici e Chiusura</div>
+    <div class="slide-body">
+      <ul class="prop-list">
+        
+        <li><span>Fibre Ottiche: Impulsi di luce intrappolati per riflessione totale per la rete internet globale.</span> </li>
+        <li><span>Endoscopia: Diagnostica medica non invasiva tramite fasci flessibili di luce guidata.</span></li>
+        <li><span>Dispersione: L'indice dipende da $\lambda$; genesi dell'arcobaleno.</span></li>
+      </ul>
+    </div>
+    <div class="media-col">
+      <div class="placeholder">
+        <img src="https://i.ibb.co/gLjS7kC0/fibra-ottica-jpg.jpg" alt="fibra ottica jpg" border="0">
+      </div>
+    </div>
+  </div>
+  <!-- ─── HUD ─── -->
+  <div id="hud">
+    <div class="hud-left">Progetto Luce · 2026</div>
+    <div class="hud-center" id="slide-counter">1 / 1</div>
+    <div class="hud-right">
+      <div id="progress-bar"><div id="progress-fill"></div></div>
+      <button id="fullscreen-btn" title="Fullscreen">⛶</button>
+    </div>
+  </div>
+</div><!-- /stage -->
+
+<script src="presentation.js"></script>
+</body>
+</html>
